@@ -54,7 +54,7 @@ export default function Pop() {
                 <p className="text-black/50">
                   Start integrating products and tools
                 </p>
-                <CBox />
+                {/* <CBox /> */}
               </a>
             </div>
             <div className="py-2 px-3">{/* <CBox /> */}</div>
@@ -62,7 +62,7 @@ export default function Pop() {
               <p className="text-black/50">
                 Start integrating products and tools
               </p>
-              {/* <CBox /> */}
+              <CBox />
             </div>
           </PopoverPanel>
         </Popover>
