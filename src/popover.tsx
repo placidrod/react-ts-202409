@@ -1,4 +1,5 @@
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/react';
+import CBox from './c-box';
 
 export default function Pop() {
   return (
@@ -13,16 +14,20 @@ export default function Pop() {
           <PopoverPanel
             transition
             anchor="bottom end"
+            portal
             className="divide-y divide-white/5 rounded-xl bg-white text-sm/6 transition duration-200 ease-in-out [--anchor-gap:10px] data-[closed]:-translate-y-1 data-[closed]:opacity-0 border border-black w-96"
           >
             <div className="p-3">
-              <a
+              {/* <a
                 className="block rounded-lg py-2 px-3 transition hover:bg-white"
                 href="#"
               >
                 <p className="font-semibold text-black">Insights</p>
                 <p className="text-black/50">Measure actions your users take</p>
-              </a>
+              </a> */}
+              {/* <div className="py-2 px-3">
+                <CBox />
+              </div> */}
               <a
                 className="block rounded-lg py-2 px-3 transition hover:bg-white"
                 href="#"
@@ -49,7 +54,15 @@ export default function Pop() {
                 <p className="text-black/50">
                   Start integrating products and tools
                 </p>
+                <CBox />
               </a>
+            </div>
+            <div className="py-2 px-3">{/* <CBox /> */}</div>
+            <div className="py-2 px-3 mt-8">
+              <p className="text-black/50">
+                Start integrating products and tools
+              </p>
+              {/* <CBox /> */}
             </div>
           </PopoverPanel>
         </Popover>
