@@ -5,14 +5,15 @@ export default function Pop() {
     <div className="flex full justify-center pt-20">
       <div className="flex gap-8">
         <div className="text-sm/6 font-semibold text-black/50">Products</div>
+        <div className="text-sm/6 font-semibold text-black/50">Pricing</div>
         <Popover __demoMode>
           <PopoverButton className="block text-sm/6 font-semibold text-black/50 focus:outline-none data-[active]:text-black data-[hover]:text-black data-[focus]:outline-1 data-[focus]:outline-black">
             Solutions
           </PopoverButton>
           <PopoverPanel
             transition
-            anchor="bottom"
-            className="divide-y divide-white/5 rounded-xl bg-white text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
+            anchor="bottom end"
+            className="divide-y divide-white/5 rounded-xl bg-white text-sm/6 transition duration-200 ease-in-out [--anchor-gap:10px] data-[closed]:-translate-y-1 data-[closed]:opacity-0 border border-black w-96"
           >
             <div className="p-3">
               <a
@@ -52,7 +53,6 @@ export default function Pop() {
             </div>
           </PopoverPanel>
         </Popover>
-        <div className="text-sm/6 font-semibold text-black/50">Pricing</div>
       </div>
     </div>
   );
