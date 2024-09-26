@@ -36,7 +36,7 @@ export default function CBox() {
         value={selected}
         onChange={(value) => setSelected(value)}
         onClose={() => setQuery('')}
-        __demoMode
+        // __demoMode
       >
         <div className="relative">
           <ComboboxInput
